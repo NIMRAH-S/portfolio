@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/NIMRAH-S/portfolio/',
+    base: '/portfolio/',
     publicDir: 'src/assets/public',
     plugins: [react(), tailwindcss()],
     resolve: {
