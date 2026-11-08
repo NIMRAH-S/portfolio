@@ -92,8 +92,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onConnect }) => {
                 {/* Portrait Image */}
                 <div className="relative aspect-[1069/691] overflow-hidden bg-[#ECE7DA]">
                   <img
-                    src="/src/assets/images/hero_portrait_nimrah_1794128993367.jpeg"
-                    alt="Nimrah Shahid — Computer Science student, Full-Stack Developer and AI Engineer"
+                    src={`${import.meta.env.BASE_URL}images/hero_portrait_nimrah_1794128993367.jpeg`}
+                    alt="Nimrah Shahid"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center grayscale contrast-[1.05] hover:grayscale-0 transition-all duration-700 ease-out"
                     loading="eager"
