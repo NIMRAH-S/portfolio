@@ -3,11 +3,9 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-const basePath = process.env.VITE_BASE_PATH ?? '/portfolio';
-
 export default defineConfig(() => {
   return {
-    base: `${basePath.replace(/\/+$/, '')}/`,
+    base: `/`,
     publicDir: 'src/assets/public',
     plugins: [react(), tailwindcss()],
     resolve: {
